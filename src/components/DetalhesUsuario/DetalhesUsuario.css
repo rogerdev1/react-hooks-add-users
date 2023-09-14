@@ -1,0 +1,29 @@
+.DetalhesUsuario{
+    display: flex;
+    padding: 20px;
+}
+
+.DetalhesUsuarioDados{
+    border: gray 3px solid;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.DetalhesUsuarioDados img{
+    border-radius: 50%;
+    border: 4px rgb(14, 218, 14) solid;
+    margin-bottom: 10px;
+}
+
+.DetalhesUsuarioDadosFuncionais{
+    width: 100%;
+    text-align: left;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: gray 3px solid;
+}

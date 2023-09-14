@@ -8,7 +8,6 @@ form{
     border-radius: 6px;
     width: 50%;
     margin: 0px auto;
-    margin-top: 50px;
     padding: 10px;
 }
 
@@ -16,7 +15,7 @@ form .input-group{
     width: 80%;
     margin: 0px auto;
     text-align: left;
-    margin-bottom: 10px;
+    margin-top: 10px;
     display: flex;
 }
 form .input-group .label-group{
@@ -33,9 +32,9 @@ form button{
     border-radius: 6px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
+    margin-top: 10px;
 }
 form button:hover{
     background-color: rgb(42, 57, 44);
     transition: 0.4s;
 }
-

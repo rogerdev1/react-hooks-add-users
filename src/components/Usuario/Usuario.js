@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Usuario.css'
 import ImgChaves from './chaves.png'
 import ImgPerfil from './logo192.png'
@@ -14,7 +15,7 @@ function Usuario(props){
     }
 
     return(
-        <div className='Usuario'>
+        <Link to={`/usuarios/${props.usuario.id}`} className='Usuario'>
             <div className='UsuarioFoto'>
                 <img src={verificaAvatar(props.usuario.avatar)} alt='foto avatar'width='80px' />
             </div>
@@ -47,7 +48,7 @@ function Usuario(props){
             <div className='btnDelete'>
                 <button onClick={props.removerUsuario}>X</button>
             </div>
-        </div>
+        </Link>
     )
 }
 

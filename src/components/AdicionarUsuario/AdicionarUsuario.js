@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './AdicionarUsuario.css'
 
-function AdicionarUsuario(props){
+function AdicionarUsuario(){
 
     const [nome, setNome] = useState('')
     const [sobrenome, setSobrenome] = useState('')
@@ -38,11 +38,11 @@ function AdicionarUsuario(props){
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(usuario)
         })
-        .then( resposta => resposta.json())
-        .then( dados => {
-            document.querySelectorAll('.UsuarioFoto img').forEach( img => console.log(img))
-            limpaTudo()
-            props.adicionarUsuario(dados)
+        .then( resposta => {
+            if(resposta.ok){
+                limpaTudo()
+                alert('Usuário cadastrado com sucesso!')
+            }
         })
     }
 
@@ -50,6 +50,7 @@ function AdicionarUsuario(props){
     return(
         <div>
             <form onSubmit={onSubmitMetodo}>
+                <h2>Adicionar Usuario</h2>
                 <div className='input-group'>
                     <div className='label-group'>
                         <label htmlFor='nome'>Nome: </label>
