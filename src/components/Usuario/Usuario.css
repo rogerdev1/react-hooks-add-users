@@ -1,0 +1,71 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+.Usuario{
+    border: 2px rgb(107 107 107) solid;
+    border-radius: 6px;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    height: 100%;
+}
+
+.Usuario .UsuarioFoto{
+    padding-left: 10px;
+    text-align: left;
+    height: 100%;
+    width: 15%;
+}
+.Usuario .UsuarioDados{
+    padding-left: 10px;
+    text-align: left;
+    height: 100%;
+    width: 30%;
+}
+
+.divisor{
+    height: 80px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    width: 5%;
+}
+
+.Usuario .UsuarioDadosFuncionais{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 50%;
+}.Usuario .UsuarioDadosFuncionais span{
+    color: gray;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}.Usuario .UsuarioDadosFuncionais span small{
+    width: 100%;
+    text-align: center;
+}
+
+.btnDelete{
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+.btnDelete:hover{
+    transform: scale(1.1);
+}
+.btnDelete button{
+    border-radius: 50%;
+    padding: 1px 5px;
+    font-weight: 700;
+    color: aliceblue;
+    background-color: rgb(218 7 7);
+    border: none;
+}.btnDelete button:hover{
+    background-color: rgb(179 6 6);
+    cursor: pointer;
+}

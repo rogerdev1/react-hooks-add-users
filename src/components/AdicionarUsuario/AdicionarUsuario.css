@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    border: 2px gray solid;
+    border-radius: 6px;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+form .input-group{
+    width: 80%;
+    margin: 0px auto;
+    text-align: left;
+    margin-bottom: 10px;
+    display: flex;
+}
+form .input-group .label-group{
+    width: 22%;
+}form .input-group input{
+    width: 75%;
+    padding: 5px;
+}
+
+form button{
+    padding: 5px 10px;
+    background-color: rgb(64, 88, 67);
+    border: .5px rgba(128, 128, 128, 0.523) solid;
+    border-radius: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+form button:hover{
+    background-color: rgb(42, 57, 44);
+    transition: 0.4s;
+}
+
